@@ -7,3 +7,5 @@ fields:
   config:
     required: false
   label: Where do we go from here?
+pages:
+- "**/blog/test_blog.md"
