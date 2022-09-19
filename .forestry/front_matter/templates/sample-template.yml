@@ -1,11 +1,4 @@
 ---
 label: Sample template
 hide_body: false
-fields:
-- name: where_do_we_go_from_here_
-  type: text
-  config:
-    required: false
-  label: Where do we go from here?
-pages:
-- "**/blog/test_blog.md"
+fields: []
