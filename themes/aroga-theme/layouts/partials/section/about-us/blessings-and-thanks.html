@@ -1,0 +1,14 @@
+<div class="blessings-and-thanks text-center pb-13p875">
+    <div class="blessings mb-3p125 md-mb-4p75">
+        <div class="blessings__title fw-500 fs-1 lh-1p5 mb-1 md-fs-1p728 md-lh-2">Blessings from</div>
+        {{ range .Params.blessings_from }}
+        <div class="blessings__from fs-p83 lh-1 text-subtitle-color mb-0p375 md-fs-1p44 md-lh-1p5">{{ . }}</div>
+        {{ end }}
+    </div>
+    <div class="thanks">
+        <div class="thanks__title fw-500 fs-1 lh-1p5 mb-1 md-fs-1p728 md-lh-2">Special Thanks</div>
+        {{ range .Params.thanks }}
+        <div class="thanks_to fs-p83 lh-1 text-subtitle-color mb-0p375 md-fs-1p44 md-lh-1p5">{{ . }}</div>
+        {{ end }}
+    </div>
+</div>

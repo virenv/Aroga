@@ -1,0 +1,37 @@
+{{ with . }}
+{{ $items := (.list | len) }}
+{{ $containerWidth := mul $items 100 }}
+{{ $itemWidth := div 100.0 $items }}
+
+    <div class="slider border-1p375 {{ with .evenClass }} {{ . }} {{ end }} pt-2p6875"
+         {{ with .oddClass }} data-odd-class="{{ . }}" {{ end }}
+         {{ with .evenClass }} data-even-class="{{ . }}" {{ end }}>
+        <div class="living-farms-quotes-container">
+            <ul class="slider__container d-flex d-row flex-row p-0 m-0" style="width: {{ $containerWidth }}%">
+
+                {{ range $index, $quote := .list }}
+                <li class="d-flex flex-column d-slide {{ if eq $index 0 }} active {{ end }} text-center"
+                    data-index="{{ $index }}"
+                    style="width: {{ $itemWidth }}%">
+
+                    <div class="living-farms-quotes__opening-quote fs-3p583125 align-content-flex-start">“</div>
+                    <div class="living-farms-quotes__quote fs-1p728 px-2p1875 md-px-6 md-fs-2p488">{{ $quote }}</div>
+                    <div class="living-farms-quotes__closing-quote fs-3p583125 mt-auto" style="margin-top: auto">“</div>
+
+                </li>
+                {{ end }}
+
+            </ul>
+
+            <ol class="slider__controls p-0 m-0 d-flex flex-row justify-content-center pb-3p125 md-px-2p1875">
+                <li class="pointer previous slider__control fs-1 px-0p7 py-0p5 border-circle">
+                    <i class="icon-chevron-left"></i>
+                </li>
+                <li class="pointer next slider__control fs-1 px-0p7 py-0p5 border-circle">
+                    <i class="icon-chevron-right"></i>
+                </li>
+            </ol>
+
+        </div>
+    </div>
+{{ end }}

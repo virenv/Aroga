@@ -1,0 +1,70 @@
+.farm-and-person {
+
+  height: 500px;
+
+  @include on-md-to-xl() {
+    height: 811px;
+  }
+
+  left: 0;
+  right: 0;
+
+  z-index: -1;
+  top: 0;
+
+  &__wrapper {
+
+    height: 500px;
+
+    @include on-md-to-xl() {
+      height: 811px;
+    }
+  }
+
+  &__farm {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+
+    @include on-md-to-xl() {
+      width: 100%;
+    }
+  }
+
+  &__person {
+
+    width: 50%;
+
+    left: 5%;
+    bottom: 0;
+    z-index: 1;
+
+    @include on-md-to-xl() {
+      left: 10%;
+      width: 30%;
+    }
+  }
+}
+
+.explore-our-blogs {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: translateY(-50%);
+  top: 40%;
+
+  @include on-md-to-xl() {
+    top: 50%;
+  }
+
+
+
+  .explore {
+    color: #262626
+  }
+
+  .our-blogs {
+    color: #547836
+  }
+}

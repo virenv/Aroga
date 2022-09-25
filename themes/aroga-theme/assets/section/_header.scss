@@ -32,6 +32,10 @@ header {
     a {
       color: #474747;
       text-decoration: none;
+
+      &.active {
+        color: $primary-heading-color;
+      }
     }
   }
 

@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+{{ partial "section/about-us/team-image.html" . }}
+{{ partial "section/about-us/farm-team.html" . }}
+{{ partial "section/about-us/global-contributors.html" . }}
+{{ partial "section/about-us/associated-with.html" . }}
+{{ partial "section/about-us/blessings-and-thanks.html" . }}
+{{ partial "section/about-us/farms.html" }}
+
+{{ $menuToggle := resources.Get "js/xs-menu-toggle.js" | minify }}
+<script src="{{ $menuToggle.Permalink }}" type="application/javascript"></script>
+
+{{ end }}

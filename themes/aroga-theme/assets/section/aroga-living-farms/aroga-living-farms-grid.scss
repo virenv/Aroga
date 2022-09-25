@@ -1,0 +1,84 @@
+.slider {
+  transition: background-color .5s, color .5s;
+}
+
+.yellow-background-black-text {
+  background-color: #EBCE73;
+  color: #000;
+}
+
+.green-background-white-text {
+  background-color: #709453;
+  color: white;
+}
+
+.living-farms-grid {
+  grid-template-columns: 56.65% 43.35%;
+  grid-template-areas: "slider kid"
+  "tree kid";
+  grid-row-gap: 1rem;
+
+  &__kid-sitting {
+    grid-area: kid;
+  }
+
+  &__tree {
+    grid-area: tree;
+  }
+
+  &__all-quotes-slider {
+    grid-area: slider;
+  }
+
+}
+
+@include on-xs-to-md() {
+
+  .living-farms-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "slider"
+  "tree";
+  }
+
+  .living-farms-grid__kid-sitting {
+    display: none;
+  }
+
+}
+
+.living-farms-grid-lower {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "kid-on-swing leaves"
+  "grand-father-and-grand-son field"
+  "kids-playing kids-playing"
+  "fields people-working";
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+
+  &__kid-sitting {
+    grid-area: kid-on-swing;
+  }
+
+  &__leaves {
+    grid-area: leaves
+  }
+
+  &__grandfather {
+    grid-area: grand-father-and-grand-son;
+  }
+
+  &__kids-playing {
+    grid-area: kids-playing;
+  }
+}
+
+@include on-md-to-xl() {
+
+  .living-farms-grid-lower {
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "kid-on-swing leaves fields"
+"grand-father-and-grand-son field people-working"
+"kids-playing kids-playing kids-playing";
+  }
+}

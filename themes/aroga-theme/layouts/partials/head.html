@@ -27,10 +27,18 @@
     {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
     {{ end -}}
 
+    {{ if .Params.css }}
+    {{ with .Params.css }}
+    {{ $pageCss := resources.GetMatch . | resources.ToCSS | resources.Minify }}
+    <link rel="preload" as="style" href="{{ $pageCss.Permalink }}">
+    <link type="text/css" rel="stylesheet" href="{{ $pageCss.Permalink }}" integrity="{{ $pageCss.Data.Integrity }}">
+    {{ end }}
+    {{ else }}
     <!-- CSS -->
     {{ $css := resources.GetMatch "index.scss" | resources.ToCSS | resources.Minify }}
     <link rel="preload" as="style" href="{{ $css.Permalink }}">
     <link type="text/css" rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+    {{ end }}
 
     {{ $fontsCss := resources.GetMatch "css/icons.css" | resources.Minify }}
     <link rel="preload" as="style" href="{{ $fontsCss.Permalink }}">

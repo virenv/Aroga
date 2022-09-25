@@ -1,0 +1,18 @@
+<div class="journey-header mb-1p9375 relative">
+    {{ with .Params }}
+    <img srcset="{{ .banner.mobile }} 304w,
+                            {{ .banner.desktop }} 1308w"
+         sizes="(max-width: 600px) 312px, 1308px"
+         alt="{{ .Site.Title }} Team"
+         class="image-responsive"
+    />
+    <div class="journey-header__about text-center">
+        <div class="journey-header__title fw-700 fs-1p728 lh-2 mb-0p562 md-fs-2p488 md-lh-2p5">Our Story</div>
+        {{ range $index, $t := .banner.text }}
+        <p class="fw-500 fs-1 lh-1p5 text-subtitle-color md-fs-1p2">{{ . }}</p>
+        {{ end }}
+        <button class="btn btn-primary fs-1p44 lh-1p5 mx-auto d-block md-d-none">Read More <i
+                class="md-d-none icon-arrow-right relative top-0p125"></i></button>
+    </div>
+    {{ end }}
+</div>

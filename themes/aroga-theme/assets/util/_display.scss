@@ -1,0 +1,31 @@
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+@include on-md-to-xl() {
+
+  .md-d-none {
+    display: none;
+  }
+
+  .md-d-block {
+    display: block;
+  }
+
+  .md-d-flex {
+    display: flex;
+  }
+
+}

@@ -1,0 +1,107 @@
+{{ define "main" -}}
+{{ partial "section/blogs/farm-and-person.html" . }}
+
+{{ if $.Title }}
+<h1>{{ $.Title | humanize }}</h1>
+{{ end }}
+
+{{ if $.Description }}
+<h2>{{ $.Description | markdownify }}</h2>
+{{ end }}
+
+{{ $baseUrl := .Site.BaseURL }}
+
+<ul class="articles m-0 p-0 mb-16">
+    {{ range .Data.Pages -}}
+    <li>
+        <div class="article mb-1p5">
+            <div class="md-d-none">
+                <a class="article__title fw-600 fs-1p728 lh-2 mb-1p5 d-block md-black pointer" href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+                <div class="article__preview d-flex flex-row mb-1">
+                    <div class="col-auto">
+                        <img src="{{ $baseUrl }}images/blogs/{{ .Params.picture.summary }}" alt=".Params.picture.alt"
+                             class="image-responsive article__image"/>
+                    </div>
+                    <div class="col-7 fs-p83 lh-1 text-subtitle-color flex-grow-1 pl-1">
+                        {{ .Description }}
+                    </div>
+                </div>
+                <div class="articles__tags__like-and-share d-flex flex-row mb-0p6875">
+                    <div class="article__tags col-auto">
+                        <ul class="p-0 m-0">
+                            {{ range .Params.Tags }}
+                            <li class="d-inline-block article__tag fs-p83 lh-1">
+                                <a href="{{site.BaseURL}}tags/{{.}}" class="text-subtitle-color">{{ . | humanize }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    <div class="col-auto ml-auto pointer article__action">
+                        <i class="icon-send"></i>
+                        <i class="icon-thumbs-up1"></i>
+                    </div>
+                </div>
+
+                {{ if .ReadingTime }}
+                {{ $readingTime := .ReadingTime }}
+                {{ if eq $readingTime 1 }}
+                <div class="article__reading-time fs-p83 lh-1 text-subtitle-color"> 1 minutes read</div>
+                {{ else }}
+                <div class="article__reading-time fs-p83 lh-1 text-subtitle-color"> {{ $readingTime }} minutes read</div>
+                {{ end }}
+                {{ end }}
+
+            </div>
+
+            <div class="d-none md-d-block">
+                <div class="d-flex flex-row">
+
+                    <div class="mr-8 d-flex flex-column">
+                        <a class="article__title fw-600 md-fs-2p488 md-lh-2p5 mb-1p5 d-block" href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+                        <div class="fw-500 fs-1p44 lh-1p5 text-subtitle-color">
+                            {{ .Description }}
+                        </div>
+                        <div class="articles__tags__like-and-share d-flex flex-row mb-0p6875 mt-auto">
+                            <div class="article__tags col-auto">
+                                <ul class="p-0 m-0 d-inline-block">
+                                    {{ range .Params.Tags }}
+                                    <li class="d-inline-block article__tag fs-p83 lh-1">
+                                        <a href="{{site.BaseURL}}tags/{{.}}" class="text-subtitle-color">{{ . | humanize }}</a>
+                                    </li>
+                                    {{ end }}
+                                </ul>
+                                {{ if .ReadingTime }}
+                                {{ $readingTime := .ReadingTime }}
+                                {{ if eq $readingTime 1 }}
+                                <div class="article__reading-time fs-p83 lh-1 text-subtitle-color d-inline-block"> 1 minutes read</div>
+                                {{ else }}
+                                <div class="article__reading-time fs-p83 lh-1 text-subtitle-color d-inline-block"> {{ $readingTime }} minutes read</div>
+                                {{ end }}
+                                {{ end }}
+                            </div>
+                            <div class="col-auto ml-auto pointer article__action">
+                                <i class="icon-send"></i>
+                                <i class="icon-thumbs-up1"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="{{ $baseUrl }}images/blogs/{{ .Params.picture.summary }}" alt=".Params.picture.alt"
+                             class="image-responsive article__image"/>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!--        <span><a href="{{ .Permalink }}">{{ .Title  | markdownify }}</a> <time class="pull-right post-list" datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "Mon, Jan 2, 2006" }}</time></span>-->
+    </li>
+    {{- end }}
+</ul>
+
+{{ partial "section/about-us/farms.html" }}
+{{ $menuToggle := resources.Get "js/xs-menu-toggle.js" | minify }}
+<script src="{{ $menuToggle.Permalink }}" type="application/javascript"></script>
+
+{{- end }}

@@ -1,4 +1,4 @@
-{{ with .Site.Params.journey }}
+{{ with .Params.journey }}
 <div class="journey d-flex flex-row flex-wrap mb-4">
     <div class="col-12 col-md-6">
         <div class="banner-wrapper">
@@ -20,7 +20,7 @@
                     .subtitle }}
                 </div>
                 <button class="btn btn-primary fs-1p44 lh-1p5">{{ .button.text }} <i
-                        class="d-md-none {{ .button.icon }} relative top-0p125"></i></button>
+                        class="md-d-none {{ .button.icon }} relative top-0p125"></i></button>
             </div>
 
             <div class="journey-specifics d-flex flex-row flex-wrap">

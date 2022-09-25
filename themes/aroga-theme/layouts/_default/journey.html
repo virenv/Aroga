@@ -1,0 +1,10 @@
+{{ define "main" }}
+
+{{ partial "section/journey/journey-header.html" . }}
+{{ partial "section/journey/customer-stories-overview.html" . }}
+{{ partial "section/about-us/farms.html" }}
+
+{{ $menuToggle := resources.Get "js/xs-menu-toggle.js" | minify }}
+<script src="{{ $menuToggle.Permalink }}" type="application/javascript"></script>
+
+{{ end }}

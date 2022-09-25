@@ -1,0 +1,13 @@
+<div class="contributors mb-4p75">
+    <div class="contributors__subtitle text-subtitle-color text-center fw-500 fs-1 lh-1p5 md-fs-1p728 md-lh-2 md-mb-1">Our Global</div>
+    <div class="contributors__heading text-center fw-500 fs-1p728 lh-2 md-fs-2p488 md-lh-2p5 ">Contributors</div>
+
+    {{ with .Params }}
+    <img alt="{{ .Site.Title }} Contributors"
+         srcset="{{ .contributors.mobile }} 759w,
+                     {{ .contributors.desktop }} 1440w"
+         sizes="(max-width: 760px) 759px, 1440px"
+         class="image-responsive"
+         />
+    {{ end }}
+</div>

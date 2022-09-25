@@ -1,4 +1,4 @@
-{{ with .Site.Params.reviews }}
+{{ with .Params.reviews }}
 
 {{ $items := (.list | len) }}
 {{ $containerWidth := mul $items 100 }}
@@ -35,7 +35,7 @@
 
             </ul>
 
-            <ol class="slider__controls p-0 m-0 d-flex flex-row justify-content-center md-justify-content-flex-start mb-3p125 md-px-2p1875">
+            <ol class="slider__controls p-0 m-0 d-flex flex-row justify-content-center md-justify-content-flex-start pb-3p125 md-px-2p1875">
                 <li class="pointer previous slider__control fs-1 px-0p7 py-0p5 border-circle">
                     <i class="icon-chevron-left"></i>
                 </li>

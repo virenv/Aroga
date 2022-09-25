@@ -1,0 +1,37 @@
+{{ define "main" -}}
+
+<div class="article py-2p4375 px-0p875 border-1p0625 md-border-none md-border-radius-1p375 md-py-4p5 md-px-6 md-mb-3">
+    <header>
+        <h1 class="article__title fw-500 fs-1p728 lh-2 mb-1p75 md-fw-700 md-fs-2p98625 md-lh-3 md-mb-p5">{{ .Title |
+            markdownify }}</h1>
+        <div class="article__description fw-500 fs-p83 lh-1 text-subtitle-color mb-1p8125 md-fs-1p44 md-lh-2 md-mb-p75">
+            {{ .Description | markdownify }}
+        </div>
+        <div class="article__author fw-500 fs-p83 lh-1 mb-1p8125 md-fs-1 md-lh-1p5 md-mb-1p5">{{ .Params.Author }}
+        </div>
+    </header>
+
+    {{ $baseUrl := .Site.BaseURL }}
+
+    {{ with .Params.picture }}
+    <img src="{{ $baseUrl }}images/blogs/{{ .blog }}" alt="{{ .alt }}" class="image-responsive md-mb-3p625"/>
+    {{ end }}
+
+    <div class="article__content pb-13p875">
+        {{ .Content }}
+    </div>
+
+</div>
+
+<div class="mb-13p875">
+    <div class="d-none md-d-block">
+        {{ partial "section/landing-page/subscribe.html" . }}
+    </div>
+</div>
+{{ partial "section/about-us/farms.html" }}
+
+{{ $menuToggle := resources.Get "js/xs-menu-toggle.js" | minify }}
+<script src="{{ $menuToggle.Permalink }}" type="application/javascript"></script>
+
+
+{{- end }}

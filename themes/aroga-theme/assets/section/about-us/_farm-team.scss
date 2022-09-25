@@ -1,0 +1,21 @@
+.farm-team {
+  background-color: rgba($about-us-farm-team-background, 0.3);
+
+  @include on-md-to-xl() {
+    background-color: transparent;
+  }
+
+  &__member--name {
+    color: $about-us-farm-team-member-name-color;
+  }
+
+  &__member__image {
+
+    @include on-md-to-xl() {
+      height: 8.8125rem;
+      width: 8.8125rem;
+    }
+
+  }
+
+}

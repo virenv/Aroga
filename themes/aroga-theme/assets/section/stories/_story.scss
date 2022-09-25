@@ -1,0 +1,151 @@
+.story {
+  background-color: #F1F5F9;
+  border-radius: 1.375rem;
+  padding-top: 1.75rem;
+  padding-bottom: 15rem;
+  overflow: hidden;
+
+  @include on-md-to-xl() {
+    padding-top: 5rem;
+    padding-bottom: 30rem;
+  }
+
+  > p, > div {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    @include on-md-to-xl() {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+}
+
+.story__opening {
+
+  color: #474747;
+  padding-top: 3rem;
+
+  &::before {
+    content: '“';
+    position: absolute;
+    font-size: 3.583rem;
+
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+}
+
+.story-owner {
+
+  &__summary {
+    width: 50%;
+  }
+
+  &__role {
+    color: #262626;
+  }
+
+  &__stars {
+    color: rgb(226,191,85);
+
+    @include on-md-to-xl() {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__image {
+
+    height: 93px;
+    width: 93px;
+
+    @include on-md-to-xl() {
+      height: 225px;
+      width: 225px;
+    }
+
+    &--before {
+
+      width: 48px;
+      height: 82px;
+
+      left: -27px;
+      top: -30px;
+
+
+      @include on-md-to-xl() {
+        width: 112px;
+        height: 193px;
+
+        top: -71px;
+        left: -60px;
+      }
+    }
+
+    &--after {
+
+      width: 48px;
+      height: 82px;
+
+      top: 0;
+      right: -26px;
+
+
+      @include on-md-to-xl() {
+
+        width: 112px;
+        height: 193px;
+
+        right: -60px;
+        top: 0;
+
+      }
+    }
+  }
+
+}
+
+.story__closing {
+
+  color: #474747;
+  margin-bottom: 1rem;
+
+  &:last-of-type::after {
+    content: '“';
+    position: absolute;
+    font-size: 3.583rem;
+
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+  &:last-of-type {
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+  }
+
+}
+
+.back-to-journey {
+  background-color: rgb(226,191,85);
+  border:none;
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 3px;
+}
+
+.mountains-and-farms {
+  bottom: 0;
+  z-index: 1;
+  pointer-events: none;
+
+  width: 100% !important;
+}

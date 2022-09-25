@@ -1,0 +1,21 @@
+.mountains-and-farms {
+  height: 374px;
+
+  background-image: url(images/background/farms.png);
+  background-position: center center;
+  left: 0;
+  right: 0;
+
+  z-index: -1;
+  background-size: cover;
+
+  bottom: 420px;
+}
+
+@include on-md-to-xl() {
+
+  .mountains-and-farms {
+    height: 662px;
+    bottom: 260px;
+  }
+}

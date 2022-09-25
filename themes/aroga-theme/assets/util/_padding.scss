@@ -6,9 +6,34 @@
   padding: 1rem;
 }
 
+.pt-2p6875 {
+  padding-top: 2.6875rem;
+}
+
+.pt-3p125 {
+  padding-top: 3.125rem;
+}
+
+.pb-3p125 {
+  padding-bottom: 3.125rem;
+}
+
+.pb-13p875 {
+  padding-bottom: 13.875rem;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
 .px-0p7 {
   padding-left: 0.7rem;
   padding-right: 0.7rem;
+}
+
+.px-0p875 {
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
 }
 
 .px-1 {
@@ -36,14 +61,30 @@
   padding-bottom: 2rem;
 }
 
+.py-2p4375 {
+  padding-top: 2.4375rem;
+  padding-bottom: 2.4375rem;
+}
+
 .py-2p875 {
   padding-top: 2.875rem;
   padding-bottom: 2.875rem;
 }
 
 @include on-md-to-xl() {
+
   .md-px-2p1875 {
     padding-left: 2.1875rem;
     padding-right: 2.1875rem;
+  }
+
+  .md-px-6 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .md-py-4p5 {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
   }
 }

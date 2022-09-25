@@ -6,6 +6,10 @@
   border-radius: 1rem;
 }
 
+.border-1p0625  {
+  border-radius: 1.0625rem;
+}
+
 .border-1p375 {
   border-radius: 1.375rem;
 }
@@ -19,4 +23,16 @@
   .md-border-4 {
     border-radius: 4rem;
   }
+
+  .md-border-radius-1p375 {
+    border-radius: 1.375rem;
+  }
+}
+
+.b-1 {
+  border: 0.5rem solid;
+}
+
+.b-white {
+  border-color: white;
 }

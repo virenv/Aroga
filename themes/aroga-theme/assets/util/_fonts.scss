@@ -46,8 +46,16 @@
   font-size: 3.4375rem;
 }
 
+.fs-3p583125 {
+  font-size: 3.583125rem;
+}
+
 
 @include on-md-to-xl() {
+
+  .md-fs-1 {
+    font-size: 1rem;
+  }
 
   .md-fs-1p2 {
     font-size: 1.2rem;
@@ -71,6 +79,10 @@
 
   .md-fs-2p5 {
     font-size: 2.5rem;
+  }
+
+  .md-fs-2p98625 {
+    font-size: 2.98625rem;
   }
 
   .md-fs-4 {
@@ -108,6 +120,10 @@
 
   .md-lh-2p5 {
     line-height: 2.5rem;
+  }
+
+  .md-lh-3 {
+    line-height: 3rem;
   }
 
   .md-lh-3p5 {

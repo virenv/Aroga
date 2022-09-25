@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<div class="slider-wrapper mb-1p8125">
+{{ partial "slider.html" (dict "context" . "items" "1" "height" "50" "unit" "%" "duration" "7000") }}
+</div>
+
+{{ partial "section/aroga-living-farms/we-care.html" . }}
+<!--{{ partial "section/aroga-living-farms/living-farms-grid.html"  . }}-->
+{{ partial "section/aroga-living-farms/aroga-living-farms-grid-upper.html" . }}
+{{ partial "section/aroga-living-farms/aroga-living-farms-grid-lower.html" . }}
+
+
+{{ $carouselJs := resources.Get "js/carousel.js" }}
+{{ $menuToggle := resources.Get "js/xs-menu-toggle.js" }}
+{{ $js := slice $carouselJs $menuToggle | resources.Concat "js/bundle.js" | minify }}
+<script src="{{ $js.Permalink }}" type="application/javascript"></script>
+
+{{ end }}

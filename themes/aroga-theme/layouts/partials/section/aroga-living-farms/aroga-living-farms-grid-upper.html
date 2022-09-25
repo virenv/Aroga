@@ -1,0 +1,22 @@
+<div class="living-farms-grid d-grid grid-row-gap-p4375 grid-column-gap-1 mb-1">
+
+    {{ with .Params.quotes }}
+    {{ $subContext := dict "list" .list "evenClass" .evenClass "oddClass" .oddClass "containerClass" "d-none md-d-flex living-farms-grid__all-quotes-slider" }}
+    {{ partial "section/aroga-living-farms/partial-quotes-slider.html" $subContext }}
+
+    {{ end }}
+
+    {{ with .Params.grid.kidSitting }}
+    <div class="living-farms-grid__kid-sitting border-1p375" style="background-image: url({{ .desktop }}); background-position: center center; background-size: cover; background-repeat: no-repeat">
+    </div>
+    {{ end }}
+
+    {{ with .Params.grid.tree }}
+        <img srcset="{{ .mobile }} 296w,
+                             {{ .desktop }} 758w"
+             sizes="(max-width: 296px) 480px, 800px"
+             alt="{{ .alt }}"
+             class="slide image-responsive living-farms-grid__tree "/>
+    {{ end }}
+
+</div>

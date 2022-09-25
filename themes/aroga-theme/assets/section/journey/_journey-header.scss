@@ -1,0 +1,48 @@
+.journey-header {
+
+  @include on-md-to-xl() {
+    margin-bottom: 6rem;
+  }
+
+  &__about {
+    background-color: rgba(235, 228, 206, 0.2);
+    padding: 3.125rem 2.5rem 2.3125rem;
+    margin-top: -0.75rem;
+
+    p {
+      text-align: center;
+    }
+
+    p + p {
+      display: none;
+    }
+
+    @include on-md-to-xl() {
+
+      background-color: #EBC44B;
+      padding: 6rem 3rem;
+      margin-top: 0;
+      text-align: left;
+
+      position: absolute;
+      top: 0;
+      left: 5.625rem;
+
+      width: 37.25rem;
+
+      border-bottom: 17px solid #8BAD6F;
+
+      p {
+        text-align: left;
+        color: #262626;
+      }
+
+      p + p {
+        display: block;
+      }
+
+    }
+
+  }
+
+}

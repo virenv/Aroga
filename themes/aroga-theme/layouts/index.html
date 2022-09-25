@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<!--{{ partial "slider.html" (dict "context" . "items" "1" "height" "50" "unit" "%" "duration" "7000") }}-->
+{{ partial "slider.html" (dict "context" . "items" "1" "height" "50" "unit" "%" "duration" "7000") }}
 
 {{ partial "section/landing-page/why-us.html" . }}
 {{ partial "section/landing-page/journey.html" . }}
@@ -9,7 +9,7 @@
 
 {{ $carouselJs := resources.Get "js/carousel.js" }}
 {{ $menuToggle := resources.Get "js/xs-menu-toggle.js" }}
-{{ $js := slice $carouselJs $menuToggle | resources.Concat "js/bundle.js" }}
+{{ $js := slice $carouselJs $menuToggle | resources.Concat "js/bundle.js" | minify }}
 <script src="{{ $js.Permalink }}" type="application/javascript"></script>
 
 {{ end }}

@@ -1,0 +1,23 @@
+<div class="stories text-center mb-35">
+    <div class="stories__subtitle fw-500 fs-1 md-fs-1p728 lh-1p5 md-lh-2 text-subtitle-color mb-0p562 md-mb-1">Our Customers</div>
+    <div class="stories__heading fw-700 fs-1p728 md-fs-2p488 lh-2 md-lh-2p5 mb-3p5 md-mb-6p8125">Tell the Best Stories</div>
+
+    <div class="stories__customers mb-4">
+        <div class="stories__customers__members d-flex flex-row flex-wrap justify-content-center align-items-center md-justify-content-space-around">
+            {{ $context  := .Params }}
+            {{ $baseUrl := .Site.BaseURL }}
+            {{ range .Params.customers }}
+            <div class="stories__customers__member fb-50 mb-2p625 d-flex flex-column align-items-center md-fb-33">
+                <div class="stories__customers__member__image--wrapper relative mb-1 md-mb-1p875">
+                    <img class="absolute stories__customers__member__image--before z-1 left--1p25 top--1p5" src="{{ $context.members_image_before }}" alt="Leaves" aria-hidden="true"/>
+                    <img class="stories__customers__member__image border-circle b-1 b-white z-1 relative"  src="{{ .image }}" alt="{{ .name }}'s Image" />
+                    <img class="absolute stories__customers__member__image--after top-p25 right--2p" src="{{ $context.members_image_after }}" alt="Leaves" aria-hidden="true"/>
+                </div>
+                <div class="stories__customers__member--name fw-500 fs-1 lh-1p5 mb-1 md-fs-1p728 md-lh-2">{{ .name }}</div>
+                <div class="stories__customers__member--short-story mb-2 fw-500 fs-p83 lh-1 text-subtitle-color md-fs-1 md-lh-1p5">{{ .short }}</div>
+                <a class="stories__customers__member--see-story fs-p83 lh-1 pointer" href="{{ $baseUrl }}{{ .link }}">See the Story</a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>

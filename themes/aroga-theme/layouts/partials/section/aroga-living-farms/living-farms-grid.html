@@ -1,0 +1,78 @@
+<div class="living-farms-grid d-grid grid-template-2-columns grid-row-gap-p4375 grid-column-gap-1 mb-2p625">
+
+<!--    <div class="d-none md-d-flex">-->
+<!--    {{ with .Params.quotes }}-->
+<!--    {{ $subContext := dict "list" .list "evenClass" .evenClass "oddClass" .oddClass "containerClass" "d-none md-d-flex" }}-->
+<!--    {{ partial "section/aroga-living-farms/partial-quotes-slider.html" $subContext }}-->
+
+<!--    {{ end }}-->
+<!--    </div>-->
+
+<!--    {{ with .Params.quotes }}-->
+<!--    {{ $firstHalfQuotes := newScratch }}-->
+<!--    {{ $items := (.list | len) }}-->
+<!--    {{ $half := div $items 2 }}-->
+<!--    {{ range $index, $quote := first $half .list }}-->
+<!--        {{ $firstHalfQuotes.Add "list" (slice $quote) }}-->
+<!--    {{ end }}-->
+<!--    {{ $subContext := dict "list" ( $firstHalfQuotes.Get "list" ) "evenClass" .evenClass "oddClass" .oddClass "containerClass" "md-d-none" }}-->
+<!--    {{ partial "section/aroga-living-farms/partial-quotes-slider.html" $subContext }}-->
+
+<!--    {{ end }}-->
+
+    {{ with .Params.grid.kidSitting }}
+    <div class="living-farms-grid__kid-sitting">
+        <img src="{{ .desktop }}" alt="Kid sitting in farm" class="image-responsive" />
+    </div>
+    {{ end }}
+
+
+    {{ with .Params.grid.tree }}
+    <div class="living-farms-grid__tree ">
+        <img srcset="{{ .mobile }} 296w,
+                             {{ .desktop }} 758w"
+             sizes="(max-width: 296px) 480px, 800px"
+             alt="{{ .alt }}"
+             class="slide image-responsive"/>
+    {{ end }}
+    </div>
+
+
+</div>
+
+<!--<div class="living-farms-grid d-grid grid-2-template-columns md-grid-26p25-26p25-27p125-columns grid-row-gap-p4375 grid-column-gap-1 mb-2p625">-->
+
+
+<!--    {{ with .Params.grid.greenField }}-->
+<!--    <div class="living-farms-grid__green-field">-->
+<!--        <img srcset="{{ .mobile }} 143w,-->
+<!--                       {{ .desktop }} 420w"-->
+<!--             sizes="(max-width: 420px) 480x, 800px"-->
+<!--             alt="{{ .alt }}"-->
+<!--             class="image-responsive" />-->
+<!--    </div>-->
+<!--    {{ end }}-->
+
+<!--    {{ with .Params.grid.peopleWorking }}-->
+<!--    <div class="living-farms-grid__people-working">-->
+<!--        <img srcset="{{ .mobile }} 143w,-->
+<!--                       {{ .desktop }} 420w"-->
+<!--             sizes="(max-width: 420px) 480x, 800px"-->
+<!--             alt="{{ .alt }}"-->
+<!--             class="image-responsive" />-->
+<!--    </div>-->
+<!--    {{ end }}-->
+
+<!--    {{ with .Params.quotes }}-->
+<!--    {{ $lastHalfQuotes := newScratch }}-->
+<!--    {{ $items := (.list | len) }}-->
+<!--    {{ $half := div $items 2 }}-->
+<!--    {{ range $index, $quote := last $half .list }}-->
+<!--    {{ $lastHalfQuotes.Add "list" (slice $quote) }}-->
+<!--    {{ end }}-->
+<!--    {{ $subContext := dict "list" ( $lastHalfQuotes.Get "list" ) "evenClass" .evenClass "oddClass" .oddClass "containerClass" "md-d-none" }}-->
+<!--    {{ partial "section/aroga-living-farms/partial-quotes-slider.html" $subContext }}-->
+
+<!--    {{ end }}-->
+
+<!--</div>-->

@@ -1,0 +1,25 @@
+.associated-with {
+
+  @include on-md-to-xl() {
+    border: 1px solid #EBC44B;
+    border-radius: 10px 0 0 10px;
+  }
+
+  &__image {
+    max-width: 8.8125rem;
+
+    @include on-md-to-xl() {
+      max-width: 12.875rem;
+    }
+  }
+
+  &__working {
+
+    @include on-md-to-xl() {
+      color: $about-us-farm-team-member-name-color;
+      background-color: #EBCE73;
+    }
+
+  }
+
+}
