@@ -1,0 +1,29 @@
+---
+label: blog
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
+- type: list
+  name: tags
+  label: tags
+- type: datetime
+  name: date
+  label: date
+- type: field_group
+  name: picture
+  label: picture
+  fields:
+  - type: file
+    name: summary
+    label: summary
+  - type: file
+    name: blog
+    label: blog
+- type: text
+  name: author
+  label: author
