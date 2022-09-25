@@ -2,5 +2,3 @@
 label: Sample template
 hide_body: false
 fields: []
-pages:
-- blogs/test_blog.md
