@@ -1,53 +1,34 @@
 ---
 title: Aroga team can't be described into words
-description: Aroga”has propelled our thoughts only to “aarogyam”. “Aroga” has propelled our thoughts only to “aarogyam” “Aroga” has propelled our thoughts only to “aarogyam” “Aroga” has propelled our thoughts only to “aarogyam” propelled our thoughts only to “aarogyam”
-tags:
-    - no-chemical-farming
-date: 2022-04-09 11:05:15.060Z
-picture: 
-    summary: 'leaves-w_420.jpg'
-    blog: 'leaves-w_1081.jpg'
-author: Author Name
+description: Aroga”has propelled our thoughts only to “aarogyam”. “Aroga” has propelled
+  our thoughts only to “aarogyam” “Aroga” has propelled our thoughts only to “aarogyam”
+  “Aroga” has propelled our thoughts only to “aarogyam” propelled our thoughts only
+  to “aarogyam”
 tags:
 - no-chemical-farming
+date: 2022-04-09T11:05:15.060+00:00
+picture:
+  summary: leaves-w_420.jpg
+  blog: leaves-w_1081.jpg
+author: Author Name
+
 ---
+# Farmer Friends — The Earthworms
 
-# What Is Meant By Lorem Ipsum In Website?
-The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
+Earthworms are one of the most important creatures in the world. They help to aerate and improve the quality of soil, which helps plants to grow better. They also help to decompose organic matter, which enriches the soil. Earthworms are a vital part of the ecosystem and play an important role in keeping it healthy.
 
-Basically, this tool is used to create dummy content on the website when it’s new.
+They also help to decompose organic matter, making it available for plants to use as nutrients. Earthworms are an important part of the food chain, providing food for many animals including birds, amphibians, reptiles, and mammals.
 
-## Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in creating drafts of the content on the pages of the website. It originates from the Latin text but is seen as gibberish.
+**_Aroga Living Farms is a local farm that uses earthworms in their potting mix. The earthworms help to aerate the soil and improve drainage. The farm is also working on a composting project, which will use the earthworms to compost food waste._**
 
-Sometimes, the reader gets distracted while creating or working on the website. That’s why this language is important.
+The farm is able to produce a good quantity of chemical-free vegetables with the use of traditional practices.
 
-This tool makes the work easier for the webmaster.
+## The use of earthworms is a sustainable practice that can be replicated by our community as well.
 
-## How Lorem Ipsum Can Be Used?
-When using Lorem Ipsum for creating dummy content for your newly created website, you can select the text formats you want from the tool. Like, words, sentences, or paragraphs.
+You can also become a part of sustainable Bharat and think bigger.
 
-Then, you can select whether you want HTML markup in your dummy content or not
+A kitchen garden is a great way to get fresh, quality vegetables at home. By using a quality potting mix and taking care of your plants, you can grow delicious vegetables right in your backyard. With a little effort, you can enjoy fresh, healthy veggies all season long.
 
-Then, you can choose the number of words and paragraphs for your dummy content and execute the plan accordingly.
+If you’re looking to get into growing your own veggies at home, there are a few things you’ll need to take care of first. Namely, you’ll need to make sure you’re using a quality potting mix, as this will determine the health of your plants. Additionally, try to choose a spot in your kitchen that gets a fair amount of sunlight throughout the day.
 
-You can use this tool at incrementors.com for free.
-
-## How Can I Use Lorem Ipsum Tool For My Website?
-You can click on the ‘item to generate’ column and select the format you want content in.
-
-Below that, you can select if you want an HTML tag in your content or not
-
-After that, you can choose how many paragraphs you want in the ‘how many items to generate’ column.
-
-Then, you can choose the minimum and maximum words you want per sentence.
-
-Later, you can select the minimum and maximum sentences you want per paragraph.
-
-Finally, click on the button ‘generate’
-
-
-
-Taddalaa!
-
-You got your Lorem Ipsum content for your website.
+#### **_For more information, you can always reach out to Aroga Living Store and try out yourself how different our vegetables are from others and also can take guidance on how to get started with the small Kitchen garden at home._**
