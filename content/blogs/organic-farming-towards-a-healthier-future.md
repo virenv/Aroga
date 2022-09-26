@@ -16,7 +16,7 @@ author: ''
 
 Organic farming in India has been steadily growing in popularity over the past few years and it’s easy to see why! They are safer than conventionally grown food, but they also taste great! Eating organic food doesn’t just give you peace of mind knowing that you can avoid pesticides and other chemicals — it’s also a great way to take care of your body and the environment simultaneously.
 
-Food quality and safety have   become issues of high importance for the everyday consumer. Ever-growing environmental concerns and increasing food risks have severely undermined public faith in these products. People today need assurance that the food they’re eating isn’t contaminated or full of chemicals before they can even consider it for purchase.
+Food quality and safety have become issues of   high importance for the everyday consumer. Ever-growing environmental concerns and increasing food risks have severely undermined public faith in these products. People today need assurance that the food they’re eating isn’t contaminated or full of chemicals before they can even consider it for purchase.
 
 **At Aroga, we are committed to nurturing the land and offering organic farming solutions. For us, it’s all about sticking to our mission of a “healthier India”, hence we’ve converted our vast tracts of land into lush fields bursting with organic produce.**
 
