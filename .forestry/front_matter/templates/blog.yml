@@ -28,4 +28,5 @@ fields:
   name: author
   label: author
 pages:
+- content/blogs/organic-farming-towards-a-healthier-future.md
 - content/blogs/this-is-test-blog.md
