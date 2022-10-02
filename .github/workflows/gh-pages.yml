@@ -24,7 +24,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify --baseURL=https://virenv.github.io/aroga/
+        run: hugo --minify --baseURL=https://www.arogaliving.co.in
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
