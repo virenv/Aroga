@@ -9,4 +9,4 @@ picture:
 author: ''
 
 ---
-![](/uploads/screenshot-from-2022-09-24-17-30-11.png)
+![](/uploads/screenshot-from-2022-06-19-00-48-39.png)
