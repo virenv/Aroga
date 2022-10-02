@@ -8,7 +8,7 @@ beginning_quote: |
 ending_quote:
   - ...They picked tomatoes, flowers and other green vegetables. 
   - Kids loved planting Methi and Dhaniya seeds. Prateek and Ravi were so kind to send the pics of the growing plants which kids planted. Food served was also very good. All natural and basic but tasty.
-  - A must for families who want to get close to nature.“
+  - A must for families who want to get close to nature. “
 summary: “Aroga” has propelled our thoughts only to “aarogyam”...
 members_image_before: './../images/before-leaves.png'
 members_image_after: './../images/after-leaves.png'
